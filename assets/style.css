@@ -1,0 +1,128 @@
+/* Bloomberg Dark Theme */
+
+body {
+    background-color: #0c0c0c;
+    color: #f0f0f0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1 {
+    color: #fecd03;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #fecd03;
+}
+
+label {
+    color: #d3d3d3;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+}
+
+#price-output {
+    color: #00ff99;   /* Bloomberg neon green */
+}
+
+.rc-slider-track {
+    background-color: #00b386 !important;
+}
+
+.rc-slider-handle {
+    border-color: #ffffff !important;
+    background-color: #00ff99 !important;
+}
+
+.rc-slider-dot {
+    background-color: #555 !important;
+    border-color: #777 !important;
+}
+
+html, body, .app-container {
+    background-color: #0c0c0c;
+}
+
+.price-box {
+    background-color: #111;           /* dark gray panel */
+    border: 1px solid #fecd03;        /* Bloomberg yellow border */
+    color: #00ff99;                   /* neon green price text */
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 80%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px #fecd03;     /* subtle glow */
+}
+.input-box {
+    background-color: #1a1a1a;        /* slightly lighter dark gray */
+    border: 1px solid #333;           /* darker border */
+    color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.greeks-panel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.greek-box {
+    background-color: #111;
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: left;
+    color: #00ff99;
+    font-size: 20px;
+    box-shadow: 0 0 5px #222;
+}
+
+/* Make sliders compact */
+.slider-group {
+    width: 80%;            /* reduce width */
+    margin-bottom: 20px;
+}
+
+/* Two columns */
+.two-column {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Left column reduced width */
+.left-column {
+    width: 35%;
+    padding-right: 20px;
+    border-right: 1px solid #333;
+}
+
+/* Right column wider */
+.right-column {
+    width: 65%;
+    padding-left: 30px;
+}
+
+/* Top panel with price + greeks side by side */
+.top-right-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;              /* space between price and greeks */
+}
+
+/* Greeks stacked vertically */
+.greeks-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
